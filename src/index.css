@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-brandPrimary: #4CAF4F;
+  --color-neutralDGrey: #4D4D4D;
+  --color-neutralGrey: #717171;
+  --color-neutralSilver: #F5F7FA;
+  --color-grey900: #18191F;
+}
+
+
+html,body {
+  font-family: 'Inter',sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: marquee 20s linear infinite;
+}
